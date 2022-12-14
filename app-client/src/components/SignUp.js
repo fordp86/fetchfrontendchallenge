@@ -8,7 +8,7 @@ const SignUp = () => {
   let [newUser, setNewUser] = useState({
     fullname: "",
     email: "",
-    passowrd: "",
+    password: "",
     occupation: "",
     state: "",
   });
@@ -42,6 +42,50 @@ const SignUp = () => {
     <Container>
       <Stack gap={3} className="col-md-7 mx-auto p-3 signup">
         <h1>SignUp</h1>
+        <Form onSubmit={handleSubmit}>
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control
+            type="Text"
+            placeholder="Bob Barker"
+            name="fullname"
+            value={newUser.fullname}
+            onChange={handleChange}
+          />
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="bob@email.com"
+            name="email"
+            value={newUser.email}
+            onChange={handleChange}
+          />
+          <Form.Label>Passowrd</Form.Label>
+          <Form.Control
+            type="password"
+            name="password"
+            value={newUser.password}
+            onChange={handleChange}
+          />
+          <Form.Label>Occupation</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Gameshow Host"
+            name="occupation"
+            value={newUser.occupation}
+            onChange={handleChange}
+          />
+          <Form.Label>State</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="CA"
+            name="state"
+            value={newUser.state}
+            onChange={handleChange}
+          />
+          <Button variant="primary" type="submit">
+            Sign Up
+          </Button>
+        </Form>
       </Stack>
     </Container>
   );

@@ -37,7 +37,7 @@ export const UserProvider = (props) => {
         createUser,
       }}
     >
-      props.children
+      {props.children}
     </UserContext.Provider>
   );
 };
