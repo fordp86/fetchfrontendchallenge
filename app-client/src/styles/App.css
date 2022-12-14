@@ -1,9 +1,17 @@
 /********
 Typography
 **********/
+
+/*use Google Fugaz One Font*/
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+/*use Roboto Font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   background-color: rgb(235, 235, 235);
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -12,6 +20,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Fugaz One", cursive;
   text-transform: capitalize;
 }
 
@@ -19,6 +28,10 @@ h1 {
   font-size: 1.778rem;
   text-align: center;
   padding-top: 0.5rem;
+}
+
+p {
+  text-align: center;
 }
 
 /**********
@@ -29,8 +42,8 @@ nav {
 }
 
 nav a {
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: "Fugaz One", cursive;
+  font-size: 1.8rem;
 }
 
 form {
@@ -45,4 +58,5 @@ form .btn {
   --bs-btn-border-color: rgb(0, 191, 179);
   --bs-btn-hover-bg: rgb(4, 154, 143);
   --bs-btn-hover-border-color: rgb(4, 154, 143);
+  margin-top: 0.5rem;
 }
