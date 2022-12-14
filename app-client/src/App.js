@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import SignUp from "./components/SignUp";
+import ThankYou from "./components/ThankYou";
 import { UserProvider } from "./contexts/UserProvider";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<SignUp />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/thanks" element={<ThankYou />} />
           </Routes>
         </BrowserRouter>
       </div>

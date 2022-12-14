@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import UserContext from "./UserContext";
 
 export const UserProvider = (props) => {
-  // Set Fetch API BaseUrl
-  const baseUrl = "https://frontend-take-home.fetchrewards.com/form";
-
   // Set User State As Empty
   const [user, setUser] = useState([]);
+
+  // Set Fetch API BaseUrl
+  const baseUrl = "https://frontend-take-home.fetchrewards.com/form";
 
   //Store all Users in State
   useEffect(() => {

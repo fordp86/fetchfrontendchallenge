@@ -1,0 +1,48 @@
+/********
+Typography
+**********/
+body {
+  background-color: rgb(235, 235, 235);
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 1.778rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/**********
+Main Styles
+**********/
+nav {
+  background-color: rgb(237, 199, 155);
+}
+
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form {
+  background-color: rgb(66, 62, 55);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 2rem;
+}
+
+form .btn {
+  --bs-btn-bg: rgb(0, 191, 179);
+  --bs-btn-border-color: rgb(0, 191, 179);
+  --bs-btn-hover-bg: rgb(4, 154, 143);
+  --bs-btn-hover-border-color: rgb(4, 154, 143);
+}
